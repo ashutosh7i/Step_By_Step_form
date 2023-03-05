@@ -1,0 +1,128 @@
+:root {
+    --color-1: #6366f1;
+    --color-1-hover: #4338ca;
+    --color-2: #06b6d4;
+    --color-2-hover: #0891b2;
+    --text-color: #312e81;
+    --status-btn-bg: #f8fafc;
+    --status-btn-bg-hover: #f1f5f9;
+  }
+  
+  body {
+    /* background: linear-gradient(to left, var(--color-1), var(--color-2)); */
+    background:linear-gradient(270deg, rgba(34, 255, 176, 1) 0%, rgba(12, 228, 255, 1) 37%, rgba(238, 130, 238, 1) 96%);
+  }
+  
+  .container {
+    margin: 3rem auto;
+    max-width: 500px;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .1);
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    transition: ease-in-out .3s all;
+  }
+  
+  .form-input::placeholder {
+    color: #cbd5e1;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: var(--color-1);
+  }
+  
+  .btn:focus-within,
+  .form-input:focus-within {
+    box-shadow: #f8fafc 0px 0px 0px 2px, #c7d2fe 0px 0px 0px 6px, #0000 0px 1px 2px 0px;
+  }
+  
+  textarea.form-input {
+    min-height: 150px;
+  }
+  
+  .btn {
+    border: 0;
+    background: var(--color-1);
+    padding: 1rem;
+    border-radius: 25px; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn[disabled] {
+    opacity: .5;
+    pointer-events: none;
+  }
+  
+  .btn:hover {
+    background: var(--color-1-hover);
+    transition: ease-in-out .3s all;
+  }
+  
+  .btn-submit {
+    background-color: var(--color-2);
+  }
+  
+  .btn-submit:hover {
+    background-color: var(--color-2-hover);
+  }
+  
+  .pagination {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 6px;
+  }
+  
+  .tab-status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tab-status span {
+    appearance: none;
+    background: var(--status-btn-bg);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tab-status span.active {
+    background-color: var(--color-2);
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  h1{
+    text-align: center;
+    font-family: 'Trebuchet MS';
+  }
+
+  h3{
+    margin-bottom: 4%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="tab-status">
+        <span class="tab active">1</span>
+        <span class="tab">2</span>
+        <span class="tab">3</span>
+        </div>
+        <form action="#">
+        <div role="tab-list">
+
+            <div role="tabpanel" id="Step1" class="tabpanel">
+            <h1>Step 1</h1>
+            <h3>Select file</h3>
+            <input type="text" class="form-input" id="page1data1">
+            <div id="page1show1"></div>
+            </div>
+
+            <div role="tabpanel" id="Step2" class="tabpanel hidden">
+            <h1>Step 2</h1>
+            <h3>Enter key</h3>
+            <input type="text" class="form-input" id="page2data1" placeholder="key?">
+            <div id="page2show1"></div>
+            </div>
+
+            <div role="tabpanel" id="Step3" class="tabpanel hidden">
+            <h1>Step 3</h1>
+            <h3>Upload file</h3>
+            <input type="text" class="form-input" id="page3data1" placeholder="upload?">
+            <div id="page3show1"></div>
+            </div>
+        </div>
+            <div class="pagination">
+            <a class="btn hidden" id="prev">Previous</a>
+            <a class="btn" id="next">Continue</a>
+            <button class="btn btn-submit hidden" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+  
+</body>
+</html>
